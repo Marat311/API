@@ -29,7 +29,7 @@ public class Practice1 {
         // after we send the request
         // we can save the result in to a type called Response
         // need this  import io.restassured.response.Response;
-        Response response = get("http://54.174.216.245:8000/api/hello") ;
+        Response response = get("http://34.224.94.71:8000/api/hello") ;
         // response object store all the information about the response we got
         // like status  , statusline , body , headers and so on
         System.out.println("status code of this response : " + response.statusCode()  );

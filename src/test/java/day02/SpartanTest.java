@@ -15,9 +15,9 @@ public class SpartanTest {
     @Test
     public void testAllSpartans(){
 
-        //String spartanURL = "http://54.174.216.245:8000/api/spartans" ;
+        //String spartanURL = "http://34.224.94.71:8000/api/spartans" ;
         // how to set base URL , port , base path so I can reuse them
-        RestAssured.baseURI = "http://54.174.216.245:8000" ;
+        RestAssured.baseURI = "http://34.224.94.71:8000" ;
         RestAssured.basePath = "/api" ;
 
         // it will create the request URL as is
@@ -43,7 +43,7 @@ public class SpartanTest {
         // use baseuri basepath , check status code 200 , contentType header is json
 
         given()
-                .baseUri("http://54.174.216.245:8000")  // alternative way of doing it
+                .baseUri("http://34.224.94.71:8000")  // alternative way of doing it
                 .basePath("/api")
 //                .accept("application/json").
                 .accept(ContentType.JSON).

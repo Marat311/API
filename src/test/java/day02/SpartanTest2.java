@@ -17,7 +17,7 @@ public class SpartanTest2 {
     @BeforeAll
     public static void setUp(){
 
-        RestAssured.baseURI = "http://54.174.216.245:8000" ;
+        RestAssured.baseURI = "http://34.224.94.71:8000" ;
         RestAssured.basePath = "/api" ;
 
     }
@@ -31,7 +31,7 @@ public class SpartanTest2 {
                 .log().all().
 //                .log().uri().
         when()
-                .get("/spartans/971").
+                .get("/spartans/100").
 //                .prettyPeek().
         then()
                 .log().all()
